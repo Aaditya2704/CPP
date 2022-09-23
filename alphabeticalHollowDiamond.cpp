@@ -3,8 +3,8 @@ using namespace std;
 
 int main()
 {
-    int a = 6;
-
+    int a;
+    cin >> a;
     char ch = 65;
 
     for (int i = 1; i <= a; i++)
