@@ -1,15 +1,15 @@
-#include <iostream>
-#include <string.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 void reversestring(string s)
 {
     int size = s.length();
 
-    for (int i = size - 1; i >= 0; i--)
+    for (int i = 0; i < size / 2; i++)
     {
-        cout << s[i];
+        swap(s[i], s[size - i - 1]);
     }
+    cout << s;
 }
 
 int main()
