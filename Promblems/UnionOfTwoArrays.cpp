@@ -18,11 +18,19 @@ int main()
         cin >> a2[i];
     }
     // LOGIC
-    unordered_map<int, int> mp;
+    set<int> s;
+
     for (int i = 0; i < sizeOfFirstArray; i++)
     {
-        mp[a1[i]] = i;
+        s.insert(a1[i]);
     }
-
-    return 0;
+    for (int i = 0; i < sizeOfSecondArray; i++)
+    {
+        s.insert(a2[i]);
+    }
+    set<int>::iterator itr;
+    for (auto itr = s.begin(); itr != s.end(); itr++)
+    {
+        cout << *itr << " ";
+    }
 }

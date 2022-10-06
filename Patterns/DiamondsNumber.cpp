@@ -14,7 +14,7 @@ int main()
         }
         for (int j = 1; j < i; j++)
         {
-            cout << j;
+            cout << i;
         }
         for (int k = 1; k <= i; k++)
         {
@@ -34,7 +34,7 @@ int main()
         {
             cout << j;
         }
-        for (int k = a; k < i; k++)
+        for (int k = a; k > i; k--)
         {
             cout << k;
         }
