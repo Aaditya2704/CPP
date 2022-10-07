@@ -34,7 +34,7 @@ int main()
         {
             cout << j;
         }
-        for (int k = a; k > i; k--)
+        for (int k = a - 1; k > i; k--)
         {
             cout << k;
         }
