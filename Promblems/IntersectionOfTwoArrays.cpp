@@ -18,15 +18,28 @@ int main()
         cin >> a2[i];
     }
     // LOGIC
-    unordered_map<int, int> mp;
-    for (int i = 0; i < sizeOfFirstArray; i++)
+    vector<int> v;
+    int i = 0, j = 0;
+    while (i < sizeOfFirstArray, j < sizeOfSecondArray)
     {
-        mp[a1[i]] = a2[i];
+        if (a1[i] < a2[j])
+        {
+            i++;
+        }
+        else if (a2[j] < a1[i])
+        {
+            j++;
+        }
+        else
+        {
+            v.push_back(a1[i]);
+            i++;
+            j++;
+        }
     }
-    unordered_map<int, int>::iterator iter;
-
-    for (iter = mp.begin(); iter != mp.end(); iter++)
+    for (int i = 0; i < v.size(); i++)
     {
-        cout << iter->first << " " << iter->second << endl;
+        cout << v[i] << " ";
     }
+    return 0;
 }
