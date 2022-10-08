@@ -20,7 +20,7 @@ int main()
     // LOGIC
     vector<int> v;
     int i = 0, j = 0;
-    while (i < sizeOfFirstArray, j < sizeOfSecondArray)
+    while (i < sizeOfFirstArray && j < sizeOfSecondArray)
     {
         if (a1[i] < a2[j])
         {
